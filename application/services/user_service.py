@@ -6,6 +6,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker # type: ignore
 from sqlalchemy import Column, Integer, String # type: ignore
 from sqlalchemy.future import select # type: ignore
 from sqlalchemy.exc import SQLAlchemyError # type: ignore
+import greenlet # type: ignore
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
